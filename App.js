@@ -10,11 +10,13 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="ElementChoice">
+      <Stack.Navigator
+        initialRouteName="ElementChoice"
+        screenOptions={{ headerShown: false }}
+      >
         <Stack.Screen name="ElementChoice" component={ElementChoiceScreen} />
         <Stack.Screen name="Home" component={AccueilScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
