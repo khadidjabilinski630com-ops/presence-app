@@ -14,8 +14,14 @@ export default function App() {
         initialRouteName="ElementChoice"
         screenOptions={{ headerShown: false }}
       >
-        <Stack.Screen name="ElementChoice" component={ElementChoiceScreen} />
-        <Stack.Screen name="Home" component={AccueilScreen} />
+        <Stack.Screen
+          name="ElementChoice"
+          component={ElementChoiceScreen}
+        />
+        <Stack.Screen
+          name="Home"
+          component={AccueilScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
